@@ -1,7 +1,6 @@
 def first_num(s):
     num = 0
     for i, c in enumerate(s):
-<<<<<<< HEAD
         if c.isdigit():
             num = int(c)
             break
@@ -11,8 +10,6 @@ def first_num(s):
 def first_num_string(s):
     num = 0
     for i, c in enumerate(s):
-=======
->>>>>>> origin/main
         i += 1
         if not c.isdigit():
             if "one" in s[0:i] or "eno" in s[0:i]:
@@ -50,7 +47,6 @@ def first_num_string(s):
 
 
 def main():
-<<<<<<< HEAD
     num1 = 0
     num2 = 0
     f = open("string", "r")
@@ -60,14 +56,6 @@ def main():
     f.close()
     print(num1)
     print(num2)
-=======
-    num = 0
-    f = open("string", "r")
-    for ln in f:
-        num += first_num(ln) * 10 + first_num(ln[::-1])
-    f.close()
-    print(num)
->>>>>>> origin/main
 
 
 if __name__ == '__main__':

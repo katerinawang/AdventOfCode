@@ -40,9 +40,8 @@ def first_num_string(s):
                 num = 9
                 break
         else:
-            if num == 0:
-                num = int(c)
-                break
+            num = int(c)
+            break
     return num
 
 
